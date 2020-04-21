@@ -1,0 +1,14 @@
+{
+    "name": "battis/hydratable",
+    "description": "Hydrate serialized objects with defaults and overrides",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "seth@battis.net"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    }
+}
