@@ -10,5 +10,10 @@
     ],
     "require": {
         "php": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Battis\\": "src"
+        }
     }
 }
