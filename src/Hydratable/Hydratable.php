@@ -49,6 +49,15 @@ trait Hydratable
         }
     }
 
+    /**
+     * Hydrate an array based on a set of proposed values and default
+     * values (with optional overrides.
+     * @param Array $proposals DRY proposed values
+     * @param Array $defaults default values to fill out proposed values
+     * @param Array $overrides overrides to force _instead_ of proposals
+     *                         (or defaults)
+     * @return array hydrated array of values
+     */
     protected function hydrate($proposals = [], $defaults = [], $overrides = []): array
     {
         return array_merge(

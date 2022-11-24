@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Battis\Hydratable;
-
 
 class Hydrate
 {
