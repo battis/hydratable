@@ -3,6 +3,8 @@
 
 namespace Battis\Hydratable;
 
+use Exception;
+
 trait Hydratable
 {
     /**
@@ -18,7 +20,7 @@ trait Hydratable
      *          `['json_decode', true]` &rarr; `json_decode($raw, true)`
      * @return array Decoded array value of `$raw` or `[]` if `$raw` cannot be decoded
      */
-    private function decodeArray($raw, $decoders = []): array
+    private function decodeArray($raw, array $decoders = []): array
     {
         if (is_array($raw)) {
             return $raw;
@@ -39,7 +41,7 @@ trait Hydratable
                     $args = array_merge($args, array_slice($decoder, 1));
                 }
                 if (is_callable($callable)) {
-                    $decoded = call_user_func($callable, ...$args);
+                    $decoded = @call_user_func($callable, ...$args);
                 }
                 if (is_array($decoded)) {
                     return $decoded;

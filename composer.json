@@ -13,10 +13,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Battis\\": "src"
+            "Battis\\Hydratable\\": "src"
         }
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Battis\\Hydratable\\Tests\\": "tests"
+        }
     }
 }
