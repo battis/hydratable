@@ -1,5 +1,8 @@
 # Hydratable
 
+[![Latest Version](https://img.shields.io/packagist/v/battis/hydratable.svg)](https://packagist.org/packages/battis/hydratable)
+[![codecov](https://codecov.io/gh/battis/hydratable/branch/main/graph/badge.svg?token=BG6VBKCNFB)](https://codecov.io/gh/battis/hydratable)
+
 Hydrate serialized objects with defaults and overrides
 
 This is meant to make it easier to take [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) arguments and hydrate them based on preset defaults.
