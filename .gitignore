@@ -4,4 +4,4 @@
 !/.nova/Configuration.json
 .DS_Store
 /coverage/
-.phpunit.result.cache
+.phpunit.*
